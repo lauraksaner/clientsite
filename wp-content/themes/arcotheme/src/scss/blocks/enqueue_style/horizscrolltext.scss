@@ -1,0 +1,47 @@
+.horizscrolltext {
+  overflow: hidden;
+
+	.horiz-wrap {
+		position: relative;
+
+		.scrolling-text {
+			display: inline-block;
+			transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+			will-change: transform;
+			backface-visibility: hidden;
+
+			.scrolling-text-content {
+				color: #F15623;
+				font-size: 90px;
+				white-space: nowrap;
+				transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+				line-height: 1em;
+				margin: 50px 0;
+				font-family: 'Manrope', sans-serif;
+				font-weight: 800;
+				letter-spacing: -0.025em;
+
+				.horiz-outline {
+					color: #F3F2F2;
+					text-shadow: -1px 1px 1px #F15623,
+								1px 1px 1px #F15623,
+								1px -1px 0 #F15623,
+								-1px -1px 0 #F15623;
+				}
+				.horiz-fill {
+					margin-right: 3rem;
+				}
+			}
+			&.static {
+				padding: 0;
+				.scrolling-text-content {
+					font-size: 55px;
+					white-space: normal;
+					text-align: center;
+					margin: 30px 0 80px;
+					line-height: 4rem;
+				}
+			}
+		}
+	}
+}

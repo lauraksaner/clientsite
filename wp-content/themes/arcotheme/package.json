@@ -1,0 +1,35 @@
+{
+	"name": "basetheme",
+	"version": "3.2.6",
+	"description": "npm modules to run gulp on this wordpress plugin",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "gulp"
+	},
+	"author": "Tim Gieseking, Atomicdust",
+	"license": "GPL-2.0-or-later",
+	"devDependencies": {
+		"@babel/cli": "^7.10.5",
+		"@babel/core": "^7.11.4",
+		"@babel/preset-env": "^7.11.0",
+		"@wordpress/eslint-plugin": "^2.4.0",
+		"autoprefixer": "^9.8.6",
+		"browser-sync": "^2.26.12",
+		"browserslist": "^4.14.0",
+		"cssnano": "^4.1.10",
+		"del": "^4.1.1",
+		"eslint": "^7.7.0",
+		"file-system": "^2.2.2",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^8.0.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-eslint": "^5.0.0",
+		"gulp-postcss": "^8.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-uglify": "^3.0.1",
+		"merge-stream": "^2.0.0",
+		"through2": "^3.0.2"
+	}
+}

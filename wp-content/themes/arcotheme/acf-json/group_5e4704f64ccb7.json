@@ -1,0 +1,71 @@
+{
+    "key": "group_5e4704f64ccb7",
+    "title": "Page Settings",
+    "fields": [
+        {
+            "key": "field_5e470620524f6",
+            "label": "Class",
+            "name": "page_class",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Add custom page classes to be appended to body.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_64d1315be8e3c",
+            "label": "Heading Background",
+            "name": "heading_background",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "navy": "Solid Navy",
+                "white": "Solid White",
+                "clear": "Transparent"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "vertical",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1691431343
+}

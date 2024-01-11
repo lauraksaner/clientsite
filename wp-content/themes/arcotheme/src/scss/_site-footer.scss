@@ -1,0 +1,150 @@
+#site-footer {
+	padding: 72px 0 53px 0;
+	color: $primary;
+	
+	.footer-content {
+		padding-right: 1em;
+		h2 {
+			font-weight: 500;
+		}
+		.footer-content-wrap {
+			border: 1px solid #A09E9C;
+			padding: 31px 45px;
+			margin-bottom: 34px;
+		}
+		input {
+			background-color: $ltgray;
+			border: 0;
+			height: 56px;
+			padding-left: 10px;
+			color: #A09E9C;
+			width: 100%;
+			margin-bottom: 17px;
+			&.error {
+				border: 1px solid red;
+			}
+		}
+		.hs-error-msgs, label {
+			display: none;
+		}
+		.form-columns-1:nth-of-type(2), .form-columns-1:nth-of-type(3) {
+			width: 50%;
+			display: inline-block;
+		}
+		.hs-submit {
+			margin-top: 33px;
+			input {
+				background-color: $primary;
+				width: 284px;
+				color: $white;
+				height: 56px;
+				@include media-breakpoint-down(sm) {
+					max-width: 210px;
+					width: 90%;
+				}
+			}
+		}
+		.form-columns-2{
+			max-width: 100%;
+		}
+	}
+
+	h3 {
+		color: $darkblue;
+		font-family: $font-family-serif;
+		font-weight: 600;
+		line-height: 30px;
+		letter-spacing: -0.6px; 
+	}
+
+	.footer-social {
+		padding-left: 2em;
+		.footer-phone {
+			color: $darkblue;
+			font-size: rem-calc(14);
+			font-weight: 400;
+			line-height: 20px; 
+		}
+
+		.footer-email a {
+			color: $darkblue;
+			font-size: rem-calc(14);
+			font-weight: 400;
+			line-height: 20px;
+		}
+		
+		@include media-breakpoint-down(md) {
+			padding-top: 30px;
+			padding-left: 15px;
+			padding-bottom: 10px;
+			
+			.footer-email a {
+				width: 100%;
+				display: block;
+			}
+		}
+	}
+
+	ul {
+		margin-top: 12px;
+		li {
+			display: block;
+			width: 100%;
+			padding-bottom: 12px;
+			line-height: 20px;
+
+			a {
+				padding: 0;
+			}
+		}
+
+		&.social {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+			a {
+				span {
+					color: $darkblue;
+				}
+			}
+		}
+		&#menu-footer-navigation {
+			font-size: rem-calc(14);
+			a {
+				color: $darkblue;
+			}
+		}
+	}
+}
+
+#copyright {
+	border-top: 1px solid rgba(160, 158, 156, 0.40);
+	padding: 1em 0 2em;
+	font-family: $font-family-serif;
+	font-size: rem-calc(14);
+	line-height: 20px;
+
+	.copy-links {
+		display: flex;
+
+		a {
+			color: $darkblue;
+			padding-right: 5px;
+			padding-left: 5px;
+
+			&:hover {
+				color: $primary;
+			}
+			@include media-breakpoint-down(md) {
+				padding-left: 0;
+			}
+		}
+		@include media-breakpoint-down(md) {
+			padding-top: 1rem;
+			justify-content: flex-start !important;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		padding-left: 15px;
+	}
+}

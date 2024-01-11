@@ -1,0 +1,104 @@
+.contact .hbspt-form{
+
+	font-size: 18px;
+	font-family: $font-family-serif;
+	
+	fieldset {
+		margin-top: 30px !important;
+		&:first-of-type{
+			margin-top: 0 !important;
+		}
+
+		input {
+			border: 0;
+			border-bottom: 1px solid $gray;
+			padding-left: 0 !important;
+			&::placeholder {
+				opacity: 1;
+				color: $darkblue;
+			} 
+		}
+
+		select {
+			background-color: $white;
+			border: 0;
+			border-bottom: 1px solid $gray;
+			padding-left: 0 !important;
+			color: $darkblue;
+			padding-bottom: 20px !important;
+			option {
+				font-size: 18px;
+				color: $darkblue;
+			}
+		}
+
+		textarea {
+			border: 1px solid $gray;
+			color: $darkblue;
+			margin-top: 20px !important;
+			width: 300px;
+  			height: 150px;
+			&::placeholder {
+				opacity: 1;
+				color: $darkblue;
+			}
+		}
+
+		ul {
+			padding-left: 0 !important;
+			padding-top: 5px;
+			list-style-type: none;
+
+			label {
+				display: flex;
+			}
+
+			input {
+				margin-right: 10px;
+			}
+			span {
+				padding-bottom: 2px;
+			}
+		}
+
+		.hs-error-msgs {
+			color: #F15623;
+			font-size: 13px;
+		}
+	}
+
+	.hs_submit {
+		margin-top: 2em;
+		.actions {
+			align-items: center;
+			display: inline-flex;
+			justify-content: center;
+			border: 1px solid #F15623;
+			input {
+				background-color: transparent;
+				color: #00263D;
+				font-style: normal;
+				font-weight: 700;
+				font-size: var(--global-kb-font-size-sm, 0.9rem);
+				font-family: 'Open Sans';
+				text-transform: uppercase;
+				border-radius: 0px;
+				padding: 1em 1.5em;
+				border: 0;
+			}
+			&:after {
+				content: url(../../img/orange-arrow.svg);
+				padding: .75em 1.5em 1em;
+				border-left: 1px solid #F15623;
+				height: 58px;
+  				display: inline-block;
+				transition: all .5s ease;
+			}
+			&:hover:after {
+				content: url(../../img/white-arrow.svg);
+  				background: #f15623;
+				padding-left: 1.75em;
+			}
+		}
+	}
+}
