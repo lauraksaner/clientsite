@@ -58,8 +58,8 @@ Thumbs.db
 !backgroundsize.min.htc
 
 # track favicon files, if they exist
-!android-chrome-*.png
-!apple-touch-icon*.png
+android-chrome-*.png
+apple-touch-icon*.png
 !browserconfig.xml
 !favicon*.png
 !favicon*.ico
